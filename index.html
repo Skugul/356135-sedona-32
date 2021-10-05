@@ -5,27 +5,145 @@
     <title>HTML Academy: Седона</title>
   </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-          <li>Главная</li>
-          <li>О Седоне</li>
-          <li>Гостиницы</li>
-          <li>лого</li>
-          <li>поиск</li>
-          <li>уведомления</li>
-          <li>хочу сюда!</li>
+  <header class="page-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="htmlacademy.ru/" class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="htmlacademy.ru/" class="navigation-link"></a>О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="htmlacademy.ru/" class="navigation-link"></a>Гостиницы</a>
+          </li>
+        </ul>
+        <img class="logo" src="#" alt="логотип Седоны">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">уведомления</span>
+            </a></li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">хочу сюда!</a>
+          </li>
       </ul>
   </nav>
   </header>
   <main>
-    <img src="index-background.jpg" alt="">
-<h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <section class="description">
+<h2 class="visually-hidden">Описание</h2>
+<ul class="description-list">
+  <li class="description-item">welcome</li>
+  <li class="description-item">to the gorgeous</li>
+  <li class="description-item">Sedona</li>
+  <li class="description-item">"Because the Grand Canyon sucks!"</li>
+</ul>
+    </section>
+<h1 class="main-index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+<h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h3>
+<section class="reasons1">
+  <h4 class="visually-hidden">Причины</h4>
+  <ul class="reasons1-list">
+    <li class="reasons1-item">
+<span class="reasons1-city">Настоящий городок</span>
+<span class="reasons1-city-number">— №1 —</span>
+<span class="reasons1-city-description">Седона — не аттракцион для туристов, там течёт своя жизнь</span>
+<span class="reasons1-city-pic"><img src="#" alt="фото Седоны"></span>
+<span class="reasons1-city-living">
+  <b class="reasons1-city-title">жильё</b>
+  <span class="reasons1-city-title-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+</span>
+<span class="reasons1-city-living">
+  <b class="reasons1-city-title">еда</b>
+  <span class="reasons1-city-title-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
+</span>
+<span class="reasons1-city-living">
+  <b class="reasons1-city-title">сувениры</b>
+  <span class="reasons1-city-title-desc">Не только китайского, но и настоящего местного производства!</span>
+</span>
+    </li>
+  </ul>
+</section>
+<section class="reasons2">
+<span class="reasons2-bridge-pic"><img src="#" alt="фото Моста Дьявола"></span>
+<h4 class="reasons2-bridge">Там есть мост дьявола</h4>
+<span class="reasons2-bridge-number">— №2 —</span>
+<span class="reasons2-bridge-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</span>
+</section>
+<section class="reasons3">
+  <h4 class="reasons3-bridge">Небольшая площадь</h4>
+<span class="reasons3-bridge-number">— №3 —</span>
+<span class="reasons3-bridge-description">Все достопримечательности находятся очень близко</span>
+</section>
+<section class="reasons4">
+  <h4 class="reasons4-bridge">Красивая дорога</h4>
+<span class="reasons4-bridge-number">— №4 —</span>
+<span class="reasons4-bridge-description">Все достопримечательности находятся очень близко</span>
+</section>
+<section class="reasons5">
+  <h4 class="reasons5-bridge">Красивая дорога</h4>
+<span class="reasons5-bridge-number">— №5 —</span>
+<span class="reasons5-bridge-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+</section>
+<section class="reasons6">
+  <h4 class="reasons6-bridge">Мало туристов</h4>
+<span class="reasons6-bridge-number">— №6 —</span>
+<span class="reasons6-bridge-description">Большинство едет в Гранд Каньон и толпится там</span>
+</section>
+<section class="hotels">
+  <h4 class="visually-hidden">Поиск гостиницы</h4>
+  <p class="interesting">Заинтересовались?</p>
+  <p class="dates-checking">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<a href="#" class="hotel-searching">поиск гостиницы в Седоне</a>
+</section>
+<section class="hotels">
+  <h4 class="visually-hidden">Подписаться на рассылку</h4>
+  <p class="subscrube">Подпишитесь на рассылку</p>
+  <p class="subscrube-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+<p class="newsletter-email">
+  <label class="visually-hidden" for="newsletter-email">E-mail</label>
+  <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+</p>
+<button class="button newsletter-button" type="submit">
+  <span class="subscrube-action">Подписаться</span>
+</button>
+</form>
+</section>
 </main>
 <footer>
-  
+  <ul class="footer-list">
+  <li><ul class="massangers-list">
+  <li class="massangers-list">
+    <a class="button" href="#">
+      <span class="visually-hidden">Twitter</span>
+    </a>
+    </li>
+    <li class="footer-item">
+      <a class="button" href="#">
+        <span class="visually-hidden">Facebook</span>
+      </a>
+      </li>
+      <li class="footer-item">
+        <a class="button" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+        </li>
+  </ul>
+</li>
+<li class="footer-item">
+  <a class="contacts-phone" href="tel:78121212">+7 (812) 812-12-12</a>
+</li>
+<li class="footer-item">
+  <span class="footer-logo"><img src="https://htmlacademy.ru/" alt="лого htmlacademy"></span>
+</li>
 </footer>
   </body>
-
 </html>
   
