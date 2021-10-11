@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
   <header class="page-header">
@@ -18,16 +19,16 @@
             <a href="htmlacademy.ru/" class="navigation-link"></a>Гостиницы</a>
           </li>
         </ul>
-        <img class="logo" src="#" alt="логотип Седоны">
+        <img class="logo" src="images/sedona.png" alt="логотип Седоны" width="138" height="71">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">поиск</span>
+              <img class="search" src="images/search.svg" alt="поиск" width="18" height="18">
             </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">уведомления</span>
+              <img class="favourite" src="images/heart.svg" alt="избранное" width="18" height="17">
             </a></li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">хочу сюда!</a>
@@ -35,18 +36,19 @@
       </ul>
   </nav>
   </header>
-  <main>
+<section class="searching-form">
     <h1>Гостиницы Седоны</h1>
     <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html" class="visually-hidden">Главная</a>
+            <a class="breadcrumbs-link" href="index.html"><img alt="Главная" src="images/home.svg"></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
       </header>
+      <main class="hotel-searching">
       <section class="catalog-products">
         <h2 class="visually-hidden">Поиск гостиницы по фильтру</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -120,7 +122,8 @@
               <button class="button" type="reset">Сбросить</button>
 </form>
  </section>
- <p class="search-results">Найдено гостиниц: 38</p>
+</section>
+   <p class="search-results">Найдено гостиниц: 38</p>
  <form class="sorting-type">
     <label class="visually-hidden" for="sorting">Сортировка</label>
     <select class="select-control" id="sorting" name="sorting">
@@ -131,54 +134,69 @@
     <button class="visually-hidden" type="submit">Отсортировать</button>
   </form>
   <button class="button-tile">
-    <span class="visually-hidden">Показать плиткой</span>
+    <img src="images/tile.svg" alt="Показать плиткой" width="16" height="14">
   </button>
-  <button class="button-block">
-    <span class="visually-hidden">Показать блоком</span>
+  <button class="button-slideshow">
+    <img src="images/slideshow.svg" alt="Показать слайдшоу" width="16" height="14">
   </button>
   <button class="button-list">
-    <span class="visually-hidden">Показать списком</span>
+    <img src="images/list.svg" alt="Показать списком" width="16" height="14">
   </button>
 <section class="variations">
     <ul class="variations-list">
         <li class="variations-item">
-            <img src="#" class="variations-pic" alt="фото гостиницы Amara Resort & Spa">
+            <img src="images/Amara.jpg" class="variations-pic" alt="фото гостиницы Amara Resort & Spa" width="180" height="120">
             <p class="variations-title">Amara Resort & Spa</p>
             <span class="variations-type">Гостиница</span>
             <span class="variations-price">От 4000 ₽</span>
           <a class="variations-more" href="#">Подробнее</a>
             <button class="to-favourites">В избранное</button>
-            <img src="#" class="variations-stars" alt="4 звезды">
+            <div class="stars">
+            <img src="images/star.svg" class="variations-stars" alt="звездa">
+            <img src="images/star.svg" class="variations-stars" alt="звездa">
+            <img src="images/star.svg" class="variations-stars" alt="звездa">
+            <img src="images/star.svg" class="variations-stars" alt="звездa">
+          </div>
           <span class="variations-value">Рейтинг: 8,5</span>
         </li>
         <li class="variations-item">
-            <img src="#" class="variations-pic" alt="фото мотеля Desert Quail Inn">
+            <img src="images/Quail.jpg" class="variations-pic" alt="фото мотеля Desert Quail Inn" width="180" height="120">
             <p class="variations-title">Desert Quail Inn</p>
             <span class="variations-type">Мотель</span>
             <span class="variations-price">От 3000 ₽</span>
           <a class="variations-more" href="#">Подробнее</a>
             <button class="to-favourites">В избранное</button>
-            <img src="#" class="variations-stars" alt="3 звезды">
+            <div class="stars">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+            </div>
           <span class="variations-value">Рейтинг: 8,9</span>
         </li>
         <li class="variations-item">
-            <img src="#" class="variations-pic" alt="фото апартаментов Villas at Poco Diablo">
+            <img src="images/Diablo.jpg" class="variations-pic" alt="фото апартаментов Villas at Poco Diablo" width="180" height="120">
             <p class="variations-title">Villas at Poco Diablo</p>
             <span class="variations-type">Апартаменты</span>
             <span class="variations-price">От 2000 ₽</span>
           <a class="variations-more" href="#">Подробнее</a>
             <button class="to-favourites">В избранном</button>
-            <img src="#" class="variations-stars" alt="2 звезды">
+            <div class="stars">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+            </div>
           <span class="variations-value">Рейтинг: 9,2</span>
         </li>
         <li class="variations-item">
-            <img src="#" class="variations-pic" alt="фото гостиницы GreenTree Inn">
+            <img src="images/GreenTree.jpg" class="variations-pic" alt="фото гостиницы GreenTree Inn" width="180" height="120">
             <p class="variations-title">GreenTree Inn</p>
             <span class="variations-type">Гостиница</span>
             <span class="variations-price">От 3000 ₽</span>
           <a class="variations-more" href="#">Подробнее</a>
             <button class="to-favourites">В избранное</button>
-            <img src="#" class="variations-stars" alt="2 звезды">
+            <div class="stars">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+              <img src="images/star.svg" class="variations-stars" alt="звездa">
+            </div>
           <span class="variations-value">Рейтинг: 9,2</span>
         </li>
         </ul>
@@ -225,7 +243,7 @@
   </div>
   <section class="hotels">
     <h4 class="visually-hidden">Подписаться на рассылку</h4>
-    <p class="subscrube">Подпишитесь на рассылку</p>
+    <p>Подпишитесь на рассылку</p>
     <p class="subscrube-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
   <p class="newsletter-email">
@@ -243,17 +261,17 @@
   <li><ul class="massangers-list">
   <li class="massangers-list">
     <a class="button" href="#">
-      <span class="visually-hidden">Twitter</span>
+      <img src="images/tw.svg" alt="Twitter" width="18" height="15">
     </a>
     </li>
     <li class="footer-item">
       <a class="button" href="#">
-        <span class="visually-hidden">Facebook</span>
+        <img src="images/fb.svg" alt="Facebook" width="10" height="18">
       </a>
       </li>
       <li class="footer-item">
         <a class="button" href="#">
-          <span class="visually-hidden">Youtube</span>
+          <img src="images/yt.svg" alt="Youtube" width="20" height="16">
         </a>
         </li>
   </ul>
@@ -262,7 +280,7 @@
   <a class="contacts-phone" href="tel:78121212">+7 (812) 812-12-12</a>
 </li>
 <li class="footer-item">
-  <span class="footer-logo"><img src="https://htmlacademy.ru/" alt="лого htmlacademy"></span>
+  <span class="footer-logo"><img src="images/htmlacademy.svg" alt="лого htmlacademy"></span>
 </li>
 </footer>
   </body>

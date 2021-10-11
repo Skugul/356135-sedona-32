@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
   <header class="page-header">
@@ -18,16 +19,16 @@
             <a href="htmlacademy.ru/" class="navigation-link"></a>Гостиницы</a>
           </li>
         </ul>
-        <img class="logo" src="#" alt="логотип Седоны">
+        <img class="logo" src="images/sedona.png" alt="логотип Седоны" width="138" height="71">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">поиск</span>
+              <img class="search" src="images/search.svg" alt="поиск" width="18" height="18">
             </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">уведомления</span>
+              <img class="favourite" src="images/heart.svg" alt="избранное" width="18" height="17">
             </a></li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">хочу сюда!</a>
@@ -40,10 +41,9 @@
     <section class="description">
 <h2 class="visually-hidden">Описание</h2>
 <ul class="description-list">
-  <li class="description-item">welcome</li>
-  <li class="description-item">to the gorgeous</li>
-  <li class="description-item">Sedona</li>
-  <li class="description-item">"Because the Grand Canyon sucks!"</li>
+  <li class="description-item"><img class="welcome" src="images/welcome.svg" alt="welcome" width="188" height="45"></li>
+  <li class="description-item"><img class="gorgeous" src="images/gorgeous.svg" alt="to the gorgeous" width="256" height="29"></li>
+  <li class="description-item"><img class="sedona" src="images/sedona-test.svg" alt="Sedona because the Grand Canyon sucks!" width="457" height="213"></li>
 </ul>
     </section>
 <p class="main-index">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -55,16 +55,19 @@
 <span class="reasons-city">Настоящий городок</span>
 <span class="reasons-city-number">— №1 —</span>
 <span class="reasons-city-description">Седона — не аттракцион для туристов, там течёт своя жизнь</span>
-<span class="reasons-city-pic"><img src="#" alt="фото Седоны"></span>
+<span class="reasons-city-pic"><img src="images/sedona-city.jpg" alt="фото Седоны" width="800" height="384"></span>
 <span class="reasons-city-living">
+  <img src="images/housing.svg" alt="иконка домик" width="75" height="72">
   <b class="reasons-city-title">жильё</b>
   <span class="reasons-city-title-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
 </span>
 <span class="reasons-city-living">
+  <img src="images/eating.svg" alt="иконка еда" width="74" height="70">
   <b class="reasons-city-title">еда</b>
   <span class="reasons-city-title-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
 </span>
 <span class="reasons-city-living">
+  <img src="images/souvenir.svg" alt="иконка сувенир" width="64" height="76">
   <b class="reasons-city-title">сувениры</b>
   <span class="reasons-city-title-desc">Не только китайского, но и настоящего местного производства!</span>
 </span>
@@ -72,7 +75,7 @@
   </ul>
 </section>
 <section class="reasons">
-<span class="reasons-bridge-pic"><img src="#" alt="фото Моста Дьявола"></span>
+<span class="reasons-bridge-pic"><img src="images/canyon.jpg" alt="фото Моста Дьявола" width="800" height="384"></span>
 <h4 class="reasons-bridge">Там есть мост дьявола</h4>
 <span class="reasons-bridge-number">— №2 —</span>
 <span class="reasons-bridge-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</span>
@@ -101,11 +104,11 @@
   <h4 class="visually-hidden">Поиск гостиницы</h4>
   <p class="interesting">Заинтересовались?</p>
   <p class="dates-checking">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-<a href="#" class="hotel-searching">поиск гостиницы в Седоне</a>
+<a href="#" class="searching">поиск гостиницы в Седоне</a>
 </section>
-<section class="hotels">
+<section class="subscrube">
   <h4 class="visually-hidden">Подписаться на рассылку</h4>
-  <p class="subscrube">Подпишитесь на рассылку</p>
+  <p class="subscription">Подпишитесь на рассылку</p>
   <p class="subscrube-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
 <p class="newsletter-email">
@@ -123,17 +126,17 @@
   <li><ul class="massangers-list">
   <li class="massangers-list">
     <a class="button" href="#">
-      <span class="visually-hidden">Twitter</span>
+      <img src="images/tw.svg" alt="Twitter" width="18" height="15">
     </a>
     </li>
     <li class="footer-item">
       <a class="button" href="#">
-        <span class="visually-hidden">Facebook</span>
+        <img src="images/fb.svg" alt="Facebook" width="10" height="18">
       </a>
       </li>
       <li class="footer-item">
         <a class="button" href="#">
-          <span class="visually-hidden">Youtube</span>
+          <img src="images/yt.svg" alt="Youtube" width="20" height="16">
         </a>
         </li>
   </ul>
@@ -142,7 +145,7 @@
   <a class="contacts-phone" href="tel:78121212">+7 (812) 812-12-12</a>
 </li>
 <li class="footer-item">
-  <span class="footer-logo"><img src="https://htmlacademy.ru/" alt="лого htmlacademy"></span>
+  <span class="footer-logo"><img src="images/htmlacademy.svg" alt="лого htmlacademy"></span>
 </li>
 </footer>
   </body>
