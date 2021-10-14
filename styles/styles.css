@@ -84,7 +84,7 @@ background-color: #ffffff;
 background-color: #83B3D3;
 text-align: center;
 }
-.reasons-city, .reasons-bridge {
+.reasons-city {
 font-weight: bold;
 font-size: 24px;
 line-height: 28px;
@@ -202,7 +202,7 @@ font-size: 16px;
 line-height: 21px; 
 color: #FFFFFF;
 }
-.catalog-filter-title, .catalog-filter-title, .catalog-filter-title {
+.catalog-filter-title {
 font-weight: bold;
 font-size: 20px;
 line-height: 26px; 
