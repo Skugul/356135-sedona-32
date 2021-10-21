@@ -36,6 +36,7 @@
       </ul>
   </nav>
   </header>
+      <div class="page-container">
 <section class="searching-form">
     <h1>Гостиницы Седоны</h1>
     <header class="inner-header">
@@ -78,7 +79,7 @@
                   </li>
                 </ul>
               </fieldset>
-    
+
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
@@ -108,22 +109,23 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-    
+
                 <label class="catalog-filter-label">
                   от <input class="catalog-filter-input" type="number" name="min-price" value="0">
                 </label>
-    
+
                 <label class="catalog-filter-label">
                   до <input class="catalog-filter-input" type="number" name="max-price" value="9000">
                 </label>
-    
+
               </fieldset>
               <button class="button-submit" type="submit">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
 </form>
  </section>
 <section class="main">
-   <p class="search-results">Найдено гостиниц: 38</p>
+   <div class="sort">
+     <p class="search-results">Найдено гостиниц: 38</p>
  <form class="sorting-type">
     <label class="visually-hidden" for="sorting">Сортировка</label>
     <select class="select-control" id="sorting" name="sorting">
@@ -142,15 +144,22 @@
   <button class="button-list">
     <img src="images/list.svg" alt="Показать списком" width="16" height="14">
   </button>
+</div>
 <section class="variations">
     <ul class="variations-list">
         <li class="variations-item">
-            <img src="images/Amara.jpg" class="variations-pic" alt="Фото гостиницы Amara Resort & Spa" width="180" height="120">
-            <p class="variations-title">Amara Resort & Spa</p>
+          <ul class="variations-box">
+            <li>
+              <img src="images/Amara.jpg" class="variations-pic" alt="Фото гостиницы Amara Resort & Spa" width="180" height="120">
+            </li>
+              <li>
+                <p class="variations-title">Amara Resort & Spa</p>
             <span class="variations-type">Гостиница</span>
             <span class="variations-price">От 4000 ₽</span>
           <a class="variations-more button" href="#">Подробнее</a>
             <button class="to-favourites">В избранное</button>
+          </li>
+            <li>
             <div class="stars">
             <img src="images/star.svg" class="variations-stars" alt="Звездa">
             <img src="images/star.svg" class="variations-stars" alt="Звездa">
@@ -159,13 +168,21 @@
           </div>
           <span class="variations-value">Рейтинг: 8,5</span>
         </li>
+        </ul>
+        </li>
         <li class="variations-item">
+          <ul class="variations-box">
+            <li>
             <img src="images/Quail.jpg" class="variations-pic" alt="Фото мотеля Desert Quail Inn" width="180" height="120">
+          </li>
+          <li>
             <p class="variations-title">Desert Quail Inn</p>
             <span class="variations-type">Мотель</span>
             <span class="variations-price">От 3000 ₽</span>
           <a class="variations-more button" href="#">Подробнее</a>
             <button class="to-favourites">В избранное</button>
+          </li>
+          <li>
             <div class="stars">
               <img src="images/star.svg" class="variations-stars" alt="Звездa">
               <img src="images/star.svg" class="variations-stars" alt="Звездa">
@@ -173,31 +190,49 @@
             </div>
           <span class="variations-value">Рейтинг: 8,9</span>
         </li>
+      </ul>
+        </li>
         <li class="variations-item">
+          <ul class="variations-box">
+            <li>
             <img src="images/Diablo.jpg" class="variations-pic" alt="Фото апартаментов Villas at Poco Diablo" width="180" height="120">
+          </li>
+          <li>
             <p class="variations-title">Villas at Poco Diablo</p>
             <span class="variations-type">Апартаменты</span>
             <span class="variations-price">От 2000 ₽</span>
           <a class="variations-more button" href="#">Подробнее</a>
             <button class="in-favourites">В избранном</button>
+          </li>
+          <li>
             <div class="stars">
               <img src="images/star.svg" class="variations-stars" alt="Звездa">
               <img src="images/star.svg" class="variations-stars" alt="Звездa">
             </div>
           <span class="variations-value">Рейтинг: 9,2</span>
         </li>
+      </ul>
+        </li>
         <li class="variations-item">
+          <ul class="variations-box">
+            <li>
             <img src="images/GreenTree.jpg" class="variations-pic" alt="Фото гостиницы GreenTree Inn" width="180" height="120">
+          </li>
+          <li>
             <p class="variations-title">GreenTree Inn</p>
             <span class="variations-type">Гостиница</span>
             <span class="variations-price">От 3000 ₽</span>
           <a class="variations-more button" href="#">Подробнее</a>
             <button class="to-favourites">В избранное</button>
+          </li>
+          <li>
             <div class="stars">
               <img src="images/star.svg" class="variations-stars" alt="Звездa">
               <img src="images/star.svg" class="variations-stars" alt="Звездa">
             </div>
           <span class="variations-value">Рейтинг: 9,2</span>
+                  </li>
+                          </ul>
         </li>
         </ul>
 </section>
@@ -207,6 +242,8 @@
 <p>Загрузить еще</p>
 </button>
 </div>
+<ul class="pagination-wrap">
+  <li>
 <ul class="pagination">
     <li class="pagination-item">
       <a class="pagination-link pagination-prev pagination-disabled">
@@ -232,6 +269,8 @@
         <a class="pagination-link" href="#">10</a>
       </li>
   </ul>
+</li>
+  <li>
   <div class="show-pages">
     <p>Гостиниц на странице:</p>
     <form class="pages-type">
@@ -244,6 +283,8 @@
         <button class="visually-hidden" type="submit">Отсортировать</button>
       </form>
   </div>
+</li>
+</ul>
   <section class="hotels">
     <h4 class="visually-hidden">Подписаться на рассылку</h4>
     <p class="subscription-page">Подпишитесь на рассылку</p>
@@ -259,6 +300,7 @@
   </form>
   </section>
 </main>
+</div>
 <footer>
   <ul class="footer-list">
   <li class="footer-item">
