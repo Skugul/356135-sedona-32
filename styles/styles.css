@@ -12,6 +12,9 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
     }
+    *, *::after, *::before {
+box-sizing: border-box;
+    }
     html {
     height: 100%;
     }
@@ -25,24 +28,17 @@
     display: flex;
     flex-direction: column;
     }
+    .page-header {
+      background-color: #ffffff;
+padding: 0 71px;
+    }
     .description {
     color: #000000;
     background-color: #E5E5E5;
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 485px;
-    }
-    /* !!!!!!!!!!!!!! */
-    .ornament {
-    color: #000000;
-    background-color: #E5E5E5;
-    background-image: url("../images/ornament.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 57px;
+
     }
     .subscrube {
     color: #000000;
@@ -63,10 +59,12 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    background-color: #ffffff;
-    width: 1200px;
     margin: 0 auto;
     display: flex;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     }
     .navigation a {
     color: #000000;
@@ -84,7 +82,20 @@
     text-decoration: none;
     }
     .description-list {
+      position: relative;
     text-align: center;
+    list-style-type: none;
+    margin: 0;
+    }
+    .description-list::after {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      content: "";
+    background-image: url("../images/ornament.png");
+ left: 0;
+ right: 0;
+    height: 57px;
     }
     .main-index {
     font-weight: bold;
@@ -92,12 +103,9 @@
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    }
-    h3 {
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
-    font-weight: normal;
+    padding-top: 63px;
+    padding-bottom: 23px;
+    margin: 0;
     }
     .about-sedona {
     background-color: #ffffff;
@@ -113,6 +121,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 25px;
+    display: block;
     }
     .reasons-city-title, .reasons-square, .reasons-road, .reasons-tourists {
     font-weight: bold;
@@ -135,11 +145,20 @@
     text-transform: uppercase;
     color: #FFFFFF;
     }
-    .reasons-city-living, .reasons-city-souvenir {
+    .reasons-city-living {
     background-color: rgba(131, 179, 211, 0.12);
+        width: 400px;
+padding: 89px;
+    }
+    .reasons-city-souvenir {
+    background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    padding: 89px;
     }
     .reasons-city-food {
     background-color: #FFFFFF;
+            width: 400px;
+            padding: 89px 75px 79px 75px;
     }
     .reasons-three, .reasons-five {
     background-color: rgba(131, 179, 211, 0.12);
@@ -190,6 +209,7 @@
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
+    padding-bottom: 26px;
     }
     .newsletter-button {
     font-weight: bold;
@@ -211,14 +231,12 @@
     text-decoration: none;
     color: #000000;
     }
-    .footer-list {
-    background-color: #FFFFFF;
-    }
     h1 {
     font-weight: bold;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+    margin: 0;
     }
     .breadcrumbs-item {
     font-size: 16px;
@@ -253,7 +271,7 @@
     color: #FFFFFF;
     background-color: transparent;
     }
-    .main {
+    .page-body {
     background-color: #FFFFFF;
     }
     .search-results {
@@ -262,17 +280,21 @@
     line-height: 39px;
     text-transform: uppercase;
     color: #000000;
+    margin-left: 71px;
+    margin-right: 192px;
     }
     .variations-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+    margin: 0 0 1px 0;
     }
     .variations-type, .variations-price {
     font-size: 18px;
     line-height: 23px;
     color: #333333;
+    margin-right: 78px;
     }
     .variations-value {
     font-size: 16px;
@@ -303,6 +325,12 @@
     background-color: #83B3D3;
     border-radius: 4px;
     }
+    .show-more {
+      padding-top: 13px;
+      padding-bottom: 17px;
+      width: 625px;
+      margin-left: 288px;
+    }
     .pagination-current {
     font-weight: bold;
     font-size: 20px;
@@ -313,14 +341,15 @@
     background-color: #F2F2F2;
     border-radius: 4px;
     }
-    .button-show-more, .pagination, .show-pages {
+.pagination, .show-pages {
     background-color: #FFFFFF;
     }
     .show-pages {
     font-size: 18px;
     line-height: 23px;
     color: #333333;
-    }
+    display: flex;
+  }
     .subscription-page {
     font-weight: bold;
     font-size: 30px;
@@ -349,13 +378,12 @@
     .navigation-list {
     margin: 0;
     padding: 0;
-    width: 933px;
+    list-style-type: none;
+    display: flex;
     }
     .main-container {
     flex-grow: 1;
-    }
-    .navigation-user {
-    width: 300px;
+background-color: white;
     }
     .page-container {
     width: 1200px;
@@ -366,50 +394,201 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
     }
     .reasons-item-box {
     width: 400px;
-    height: 384px;
+    padding: 98px 90px 77px 90px;
     }
     .reasons-item {
     width: 800px;
     }
-    footer {
+    .footer {
     width: 1200px;
     margin: 0 auto;
     }
     .footer-list {
+    background-color: #FFFFFF;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+    padding-top: 40px;
+    padding-bottom: 30px;
     }
     .messengers-list {
     display: flex;
-    justify-content: flex-start;
-    margin: 0 auto;
+    list-style-type: none;
+    margin-top: 10px;
+        justify-content: space-between;
     }
-    .phone {
-        width: 720px;
-        margin: 0 240px;
+    .messengers-item {
+    margin-right: 29px;
     }
+        .messengers-item:last-child {
+            margin-right: 29px;
+        }
 .catalog-filter {
   display: flex;
 }
 .sorting-type {
     display: flex;
+    margin-right: 81px;
 }
 .sort {
       display: flex;
+
 }
 .breadcrumbs {
         display: flex;
-}
-.variations-box {
-          display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 45px 0;
 }
 .pagination-wrap, .pagination {
           display: flex;
+          list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: white;
 }
 .newsletter-form {
           display: flex;
+justify-content: center;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.catalog-filter-list {
+list-style-type: none;
+}
+.variations-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.navigation-item {
+margin-right: 33px;
+}
+.navigation-item:last-child {
+margin-right: 0;
+}
+.button-here {
+padding-top: 9px;
+padding-bottom: 10px;
+width: 160px;
+}
+.welcome {
+margin-top: 52px;
+    margin-bottom: 25px;
+}
+.gorgeous {
+padding-bottom: 53px;
+}
+.five-reasons {
+padding-bottom: 79px;
+margin: 0;
+font-size: 22px;
+line-height: 36px;
+text-align: center;
+font-weight: normal;
+}
+
+.reasons-city-number, .reasons-bridge-number, .reasons-square-number, .reasons-road-number, .reasons-tourists-number {
+  display: block;
+}
+.reasons-city-title {
+      display: block;
+}
+.interesting {
+  margin-top: 0;
+  padding-top: 91px;
+    padding-bottom: 15px;
+}
+.dates-checking {
+  padding-bottom: 73px;
+}
+.searching {
+padding-top: 13px;
+padding-bottom: 17px;
+margin-bottom: 91px;
+width: 575px;
+}
+.subscription {
+  margin-top: 0;
+  padding-top: 94px;
+  padding-bottom: 15px;
+}
+.search {
+  margin-top: 10px;
+margin-right: 21px;
+}
+.logo {
+position: absolute;
+right: 50%;
+left: 50%;
+transform: translateX(-50%);
+}
+.photo {
+display: block;
+}
+.field {
+width: 600px;
+}
+.subscrube-action {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+.footer-logo {
+  margin-right: 72px;
+}
+.filter-buttons {
+  display: flex;
+flex-direction: column;
+}
+.button-tile, .button-slideshow {
+  margin-right: 8px;
+}
+.variations {
+  padding-left: 72px;
+}
+.variations-pic {
+  margin-right: 37px;
+}
+.stars {
+margin-right: 0;
+}
+.pagination {
+padding-left: 72px;
+}
+.icon {
+margin: 0 50% 23px 50%;
+transform: translateX(-50%);
+}
+.variations-item {
+  display: flex;
+}
+.searching-wrap {
+  margin-left: 71px;
+}
+.variations-box {
+  margin-left: 71px;
+}
+.bottom-wrape {
+  display: flex;
+  justify-content: space-between;
 }
