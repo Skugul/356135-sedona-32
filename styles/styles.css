@@ -64,6 +64,7 @@ body {
   background-image: url("../images/hotels-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-bottom: 83px;
 }
 
 .navigation {
@@ -464,6 +465,7 @@ h1 {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .reasons-list {
@@ -542,10 +544,10 @@ h1 {
   padding: 0;
   background-color: white;
 }
-
 .newsletter-form {
-  display: flex;
-  justify-content: center;
+  width: 800px;
+  grid-template-columns: 600px 200px;
+margin: 0 auto;
 }
 
 .visually-hidden {
@@ -565,7 +567,7 @@ h1 {
 
 .variations-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 71px;
   padding: 0;
 }
 
@@ -660,7 +662,6 @@ h1 {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  display: flex;
   align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -685,17 +686,8 @@ h1 {
 .variations {
   padding-left: 72px;
 }
-
-.variations-pic {
-  margin-right: 37px;
-}
-
 .stars {
   margin-right: 0;
-}
-
-.pagination {
-  padding-left: 72px;
 }
 
 .icon {
@@ -704,18 +696,17 @@ h1 {
 }
 
 .variations-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 180px 605px 160px;
+  column-gap: 37px;
 }
 
 .searching-wrap {
   margin-left: 71px;
 }
 
-.variations-box {
-  margin-left: 71px;
-}
-
 .bottom-wrape {
   display: flex;
   justify-content: space-between;
+  margin: 0 71px;
 }

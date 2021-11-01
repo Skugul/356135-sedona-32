@@ -121,16 +121,18 @@
       <section class="subscrube">
         <h2 class="subscription">Подпишитесь на рассылку</h2>
         <p class="subscrube-info">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="newsletter-email">
-            <label class="visually-hidden" for="newsletter-email">E-mail</label>
-            <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-          </p>
-          <button class="subscrube-action" type="submit">
-            <span>Подписаться</span>
-          </button>
-        </form>
+        <div class="newsletter-form">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">E-mail</label>
+              <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+              <button class="subscrube-action" type="submit">
+                <span>Подписаться</span>
+              </button>
+            </div>
+          </form>
+          </div>
       </section>
     </main>
     <footer class="footer">
