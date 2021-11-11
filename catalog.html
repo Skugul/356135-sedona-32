@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type=image/png" sizes="32x32" href="favicon.png">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
             </li>
             <li class="navigation-item">
               <button class="navigation-link button button-here" type="submit">
-                <span>Хочу сюда!</span>
+                <span class="opacity">Хочу сюда!</span>
               </button>
             </li>
           </ul>
@@ -126,7 +127,7 @@
                   <div class="range-wrapper-inputs">
                     <div class="filter-wrap">
                       <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="0" name="min-price"> 
+                        <input class="range-input" type="number" value="0" name="min-price">
                         <span class="white-wrap">от</span>
                       </label>
                     </div>
@@ -140,10 +141,10 @@
                   <div class="range">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0px; width: 227px">
-                        <button class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену</span>
                         </button>
                       </div>
@@ -153,7 +154,7 @@
                   </div>
                 </fieldset>
                 <div class="filter-buttons">
-                  <button class="button-submit" type="submit">Применить</button>
+                  <button class="button-submit" type="submit"><span class="text-opacity">Применить</span></button>
                   <button class="button-reset" type="reset">Сбросить</button>
                 </div>
               </form>
@@ -194,7 +195,7 @@
               <span class="variations-type">Гостиница</span>
               <span class="variations-price">От 4000 ₽</span>
               <p>
-                <a class="variations-more button" href="#">Подробнее</a>
+                <a class="variations-more button" href="#"><span class="text-opacity">Подробнее</span></a>
                 <button class="to-favourites">
                   <span class="text-opacity">В избранное</span>
                 </button>
@@ -223,7 +224,7 @@
               <h3 class="variations-title">Desert Quail Inn</h3>
               <span class="variations-type">Мотель</span>
               <span class="variations-price">От 3000 ₽</span>
-              <p><a class="variations-more button" href="#">Подробнее</a>
+              <p><a class="variations-more button" href="#"><span class="text-opacity">Подробнее</span></a>
                 <button class="to-favourites">
                   <span class="text-opacity">В избранное</span>
                 </button>
@@ -248,7 +249,7 @@
               <h3 class="variations-title">Villas at Poco Diablo</h3>
               <span class="variations-type">Апартаменты</span>
               <span class="variations-price">От 2000 ₽</span>
-              <p><a class="variations-more button" href="#">Подробнее</a>
+              <p><a class="variations-more button" href="#"><span class="text-opacity">Подробнее</span></a>
                 <button class="in-favourites">
                   <span class="text-opacity">В избранном</span>
                 </button>
@@ -272,7 +273,7 @@
               <span class="variations-type">Гостиница</span>
               <span class="variations-price">От 3000 ₽</span>
               <p>
-                <a class="variations-more button" href="#">Подробнее</a>
+                <a class="variations-more button" href="#"><span class="text-opacity">Подробнее</span></a>
                 <button class="to-favourites">
                   <span class="text-opacity">В избранное</span>
                 </button>
@@ -347,7 +348,7 @@
               <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
                 required>
               <button class="subscrube-action" type="submit">
-                <span>Подписаться</span>
+                <span class="opacity">Подписаться</span>
               </button>
             </div>
           </form>

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type=image/png" sizes="32x32" href="favicon.png">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
               <ul class="cart-items-list">
                 <li class="cart-item">
                   <span class="cart-item-title">
-                    <img src="images/hotel-2-small.jpg" alt="Миниатюра Desert Quail Inn" width="48px" height="48px">
+                    <img src="images/hotel-2-small.jpg" alt="Миниатюра Desert Quail Inn" width="48" height="48">
                   </span>
                   <div class="cart-item-price">
                     <span class="cart-title">Desert Quail Inn</span>
@@ -62,8 +63,7 @@
                 </li>
                 <li class="cart-item">
                   <span class="cart-item-title">
-                    <img src="images/hotel-3-small.jpg" alt="Миниатюра Villas at Poco Diablo" width="48px"
-                      height="48px">
+                    <img src="images/hotel-3-small.jpg" alt="Миниатюра Villas at Poco Diablo" width="48" height="48">
                   </span>
                   <div class="cart-item-price">
                     <span class="cart-title">Villas at Poco Diablo</span>
@@ -91,7 +91,7 @@
           </li>
           <li class="navigation-item">
             <button class="navigation-link button button-here" type="submit">
-              <span>Хочу сюда!</span>
+              <span class="opacity">Хочу сюда!</span>
             </button>
 
           </li>
@@ -172,9 +172,7 @@
         <p class="interesting">Заинтересовались?</p>
         <p class="dates-checking">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <button class="searching button" type="submit">
-          <span>Поиск гостиницы в Седоне</span>
-        </button>
+        <a class="searching button" href="catalog.html"><span class="opacity">Поиск гостиницы в Седоне</span></a>
       </section>
       <section class="subscrube">
         <h2 class="subscription">Подпишитесь на рассылку</h2>
@@ -246,13 +244,13 @@
           <div class="field-group">
             <label class="visually-hidden" for="auth-in">Дата заезда</label>
             <span class="input-wrap">Дата заезда:</span> <input class="auth-in-field" type="date" id="auth-in"
-              name="auth-in" placeholder="27 апреля 2020">
+              name="auth-in">
             <div class="input-error">Мы не можем отправить вас в прошлое.</div>
           </div>
           <div class="field-group">
             <label class="visually-hidden" for="auth-out">Дата выезда</label>
             <span class="input-wrap">Дата выезда:</span> <input class="auth-out-field" type="date" id="auth-out"
-              name="auth-out" placeholder="1 сентября 2021">
+              name="auth-out">
             <div class="input-confirm">На эти даты есть свободные номера. Пока есть.</div>
           </div>
           <div class="number-wrap">
@@ -276,15 +274,16 @@
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" />
                 </svg>
-              </button><div class="counter"><button><svg width="20" height="20" viewBox="0 0 20 20" fill="#a9a9a9"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
-              </svg></button><input class="auth-children-field" type="number" id="auth-children" name="auth-children"
-                placeholder="1"><button><svg width="20" height="20" viewBox="0 0 20 20" fill="#a9a9a9"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 9V11H17V9H3Z" />
-                </svg>
-              </button></div>
+              </button>
+              <div class="counter"><button><svg width="20" height="20" viewBox="0 0 20 20" fill="#a9a9a9"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg></button><input class="auth-children-field" type="number" id="auth-children"
+                  name="auth-children" placeholder="1"><button><svg width="20" height="20" viewBox="0 0 20 20"
+                    fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button></div>
             </div>
             <div class="popover-note">
               <h2 class="visually-hidden">Заметка</h2>
